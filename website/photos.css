@@ -1,0 +1,82 @@
+body , html{
+  font-family: 'DM Sans', sans-serif;
+  background-image: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  
+}
+
+header{
+    margin: 0;
+    padding: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: 1;
+}
+/* hero */
+.blog-hero {
+  margin-top: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 3rem 2rem 1.5rem;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  background-image: url('photos/DSC08970.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  min-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  position: relative;
+}
+
+.blog-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: white;
+}
+
+.blog-meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+
+.container {
+  width: 95vw;
+  height: 95vh;
+  resize: horizontal;
+  overflow-x: hidden;
+  padding: 1em;
+}
+
+.columns {
+  width: 100%;
+  column-width: 300px;
+  gap: 1em;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.photo-grid{
+  display: grid;
+  place-items: center;
+  background-color: #fff8f0;
+}

@@ -1,0 +1,192 @@
+header{
+    margin: 0;
+    padding: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: 1;
+}
+
+body
+{
+    height: auto;
+}
+
+
+img{
+width: 25vw;
+aspect-ratio: 3/2;
+}
+
+
+.blog-hero {
+margin-top: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 3rem 2rem 1.5rem;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  background-image: url('photos/project-background.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  min-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+.blog-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: white;
+}
+
+.blog-meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 10vh;
+}
+
+.card-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+}
+
+.tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 6px;
+}
+
+.card-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  color: white;
+  letter-spacing: 0.04em;
+}
+
+.card-where {
+  font-size: 11px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.Thumbnail
+{
+  width: 25vw;
+}
+.entry
+{
+  display: flex;
+  gap: 6vw;
+}
+
+.lang-tag
+{
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+    color: rgba(253, 246, 236, 0.7);
+    opacity: 0.75;
+}
+.skills
+{
+  row-gap: 5vh;
+}
+.icon
+{
+  color: white;
+  margin-top: 3vh;
+}
+
+a{
+  color: white;
+}
+
+
+
+@media (max-width: 640px) {
+
+  body {
+    padding-top: 0;
+  }
+
+  img {
+    width: 80vw;
+    aspect-ratio: 3/2;
+  }
+
+  .blog-hero {
+    min-height: 280px;
+    padding: 2rem 1rem 1rem;
+    border-bottom: 0;
+  }
+
+  .blog-title {
+    font-size: 42px;
+  }
+
+  .blog-meta {
+    font-size: 10px;
+  }
+
+
+  .entry {
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 10px;
+  }
+
+  .Thumbnail {
+    width: 100%;
+  }
+
+  .card-name {
+    font-size: 24px;
+  }
+
+  .content {
+    height: auto;
+  }
+
+  .skills {
+    row-gap: 3vh;
+    display: flex;
+    gap: 5vw;
+    
+  }
+
+  .icon {
+    margin-top: 1.5vh;
+  }
+
+  .lang-tag {
+    font-size: 1rem;
+  }
+}
+
