@@ -4,12 +4,10 @@ const button = document.getElementById('main-button')
 const aboutSection = document.querySelector('#about');
 
 function increaseBlur() {
-function increaseBlur() {
-  if (window.innerWidth <= 640) return; // skip entirely on mobile
+  if (window.innerWidth <= 640) return;
   const scrollProgress = window.scrollY / (window.innerHeight * 2);
   const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5);
   brightness.style.opacity = darknessOpacity;
-}
 }
 
 function scrollDown() {

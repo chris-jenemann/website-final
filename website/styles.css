@@ -318,13 +318,10 @@ left: 0;}
 
 @media (max-width: 640px) {
   #about {
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   padding-top: 5vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 5vh;
   }
   .left-side p {
-    color: #fdf6ec ;
-    filter: brightness();
+    color: #fdf6ec;
   }
-
-
 }
