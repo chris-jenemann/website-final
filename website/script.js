@@ -1,17 +1,16 @@
-const blur= document.getElementById('blur')
-const backdrop= document.getElementById('bg')
+const blur = document.getElementById('blur')
+const brightness = document.getElementById('brightness')
 const button = document.getElementById('main-button')
 const aboutSection = document.querySelector('#about');
-function increaseBlur()
-{
+
+function increaseBlur() {
   const scrollProgress = window.scrollY / (window.innerHeight * 2);
-  const maxBlur = window.innerHeight * 0.1; // max blur at bottom of page
+  const maxBlur = window.innerHeight * 0.1;
   const blurValue = scrollProgress * maxBlur;
-  const brightnessValue=Math.max(1 - scrollProgress, 0.5);
-  blur.setAttribute("style", `backdrop-filter: blur(${blurValue}px)`);
-  backdrop.style.filter = `brightness(${brightnessValue})`;
-  console.log( brightnessValue);
-  //console.log(scrollProgress)
+  const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5); // max 50% dark overlay
+
+  blur.style.backdropFilter = `blur(${blurValue}px)`;
+  brightness.style.opacity = darknessOpacity;
 }
     
 

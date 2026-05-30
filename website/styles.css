@@ -91,6 +91,19 @@ body{
   height: 100%;
   width: 100%;
 }
+
+.brightness {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0; /* JS will control this */
+  pointer-events: none;
+}
+
 main {
   display: flex;
   position: relative;
