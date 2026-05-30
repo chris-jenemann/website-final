@@ -309,20 +309,17 @@ left: 0;}
   }
   .left-side p {
     color: #fdf6ec ;
-    /* ensure valid filter value */
-    filter: brightness(1);
+    filter: brightness();
   }
   .bg {
-    /* Prevent background from shifting on some mobile browsers during scroll */
-    background-attachment: scroll !important;
-    background-position: center top;
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    
-
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
 }
