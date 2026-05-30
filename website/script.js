@@ -3,8 +3,10 @@ const brightness = document.getElementById('brightness')
 const button = document.getElementById('main-button')
 const aboutSection = document.querySelector('#about');
 
+// Use a stable initial height — don't update on resize so toolbar
+// show/hide never causes the background to jump or zoom.
 const bg = document.getElementById('bg');
-bg.style.height = window.innerHeight + 'px';
+bg.style.height = window.screen.height + 'px';
 
 function increaseBlur() {
   if (window.innerWidth <= 640) return;
