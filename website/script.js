@@ -7,20 +7,15 @@ function increaseBlur() {
   const scrollProgress = window.scrollY / (window.innerHeight * 2);
   const maxBlur = window.innerHeight * 0.1;
   const blurValue = scrollProgress * maxBlur;
-  const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5); // max 50% dark overlay
+  const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5);
 
-  //blur.style.backdropFilter = `blur(${blurValue}px)`;
+  blur.style.backdropFilter = `blur(${blurValue}px)`;
   brightness.style.opacity = darknessOpacity;
 }
-    
 
-function scrollDown(){
-aboutSection.scrollIntoView({behavior: "smooth"})
-
+function scrollDown() {
+  aboutSection.scrollIntoView({ behavior: "smooth" });
 }
-
-
-
 
 let ticking = false;
 window.addEventListener('scroll', () => {
@@ -33,4 +28,4 @@ window.addEventListener('scroll', () => {
   }
 });
 
-button.addEventListener('click', scrollDown)
+button.addEventListener('click', scrollDown);
