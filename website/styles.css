@@ -313,7 +313,7 @@ left: 0;}
   }
   .bg {
     position: fixed;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     transform: translateZ(0);
