@@ -58,23 +58,28 @@ body{
   background-color: transparent;
   font-weight: bold;
 }
-
-.bg{
-  background-image: url(photos/ChrisJMissionSunsetCropped.webp);
+.bg {
   height: 100%;
   width: 100%;
   position: fixed;
-  display: flex;
   z-index: -2;
-  background-position: center;
   top: 0;
   right: 0;
   left: 0;
+}
+
+.bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(photos/ChrisJMissionSunsetCropped.webp);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-attachment: fixed;
- 
+  z-index: -1;
 }
 .blur
 {
@@ -311,15 +316,6 @@ left: 0;}
     color: #fdf6ec ;
     filter: brightness();
   }
-  .bg {
-    position: fixed;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-  }
+
 
 }
