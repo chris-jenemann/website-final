@@ -83,12 +83,18 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  /* Slightly oversized to hide filter bleed at edges */
+  inset: -20px;
   z-index: 0;
-  height: 100%;
-  width: 100%;
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
+  background-image: url(photos/ChrisJMissionSunsetCropped.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(12px);
+  opacity: 0;
   pointer-events: none;
+  /* Only animate opacity — compositor-only, no repaint */
+  will-change: opacity;
 }
 
 .brightness {
