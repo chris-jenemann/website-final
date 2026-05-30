@@ -102,7 +102,7 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
-  height: 100svh;
+  height: 100lvh;
   width: 100%;
   background-color: black;
   opacity: 0;
