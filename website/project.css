@@ -27,7 +27,7 @@ margin-top: 0;
   gap: 1rem;
   padding: 3rem 2rem 1.5rem;
   border-bottom: 0.5px solid rgba(0,0,0,0.15);
-  background-image: url('photos/project-background.jpg');
+  background-image: url('photos/project-background.webp');
   background-size: cover;
   background-position: center 40%;
   min-height: 280px;
