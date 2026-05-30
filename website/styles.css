@@ -80,21 +80,13 @@ body {
 }
 
 .blur {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  /* Slightly oversized to hide filter bleed at edges */
-  inset: -20px;
   z-index: 0;
-  background-image: url(photos/ChrisJMissionSunsetCropped.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(12px);
-  opacity: 0;
-  pointer-events: none;
-  /* Only animate opacity — compositor-only, no repaint */
-  will-change: opacity;
+  background-color: rgb(225, 225, 225, 0.10);
+  height: 100%;
+  width: 100%;
 }
 
 .brightness {
