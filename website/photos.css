@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body , html{
   font-family: 'DM Sans', sans-serif;
   background-image: none;
@@ -5,8 +9,9 @@ body , html{
   margin: 0;
   padding: 0;
   height: 100%;
-  
-  
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header{
@@ -25,7 +30,7 @@ header{
   align-items: flex-end;
   gap: 1rem;
   padding: 3rem 2rem 1.5rem;
-  background-image: url('photos/photo-header.webp');
+ 
   border-bottom: 0.5px solid rgba(0,0,0,0.15);
   background-size: cover;
   background-position: center 40%;
