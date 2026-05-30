@@ -80,13 +80,15 @@ body {
 }
 
 .blur {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: rgb(225, 225, 225, 0.10);
   height: 100%;
   width: 100%;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  pointer-events: none;
 }
 
 .brightness {

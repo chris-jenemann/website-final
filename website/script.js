@@ -9,9 +9,14 @@ const bg = document.getElementById('bg');
 bg.style.height = window.screen.height + 'px';
 
 function increaseBlur() {
-  if (window.innerWidth <= 640) return;
-  const scrollProgress = window.scrollY / (window.innerHeight * 2);
-  const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5);
+  // Scroll progress: 0 at top, 1 when about section is reached
+  const scrollProgress = Math.min(window.scrollY / (window.innerHeight * 0.85), 1);
+  const maxBlur = 12; // px
+  const blurAmount = scrollProgress * maxBlur;
+  const darknessOpacity = scrollProgress * 0.45;
+
+  blur.style.backdropFilter = `blur(${blurAmount}px)`;
+  blur.style.webkitBackdropFilter = `blur(${blurAmount}px)`;
   brightness.style.opacity = darknessOpacity;
 }
 
