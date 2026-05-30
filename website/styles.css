@@ -165,7 +165,7 @@ main button:hover
   transition: background-color 0.3s ease; 
  
 }
-#about{
+#about {
     position: relative;
     z-index: 10;
     min-height: 100vh;
@@ -174,10 +174,8 @@ main button:hover
     align-items: start;
     padding: 10vh 6vw;
     gap: 6vw;
-    will-change: transform;   
 
 }
-
 
 #about h2{
 
@@ -229,8 +227,6 @@ left: 0;}
   border-radius: 12px;
   border: 1.5px solid rgb(0, 0, 0, 0.12);
   display: block;
-  will-change: transform; 
-
 }
 
 .about-tags{
