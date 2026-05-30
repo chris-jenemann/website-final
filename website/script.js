@@ -9,7 +9,7 @@ function increaseBlur() {
   const blurValue = scrollProgress * maxBlur;
   const darknessOpacity = Math.min(scrollProgress * 0.5, 0.5); // max 50% dark overlay
 
-  blur.style.backdropFilter = `blur(${blurValue}px)`;
+  //blur.style.backdropFilter = `blur(${blurValue}px)`;
   brightness.style.opacity = darknessOpacity;
 }
     
