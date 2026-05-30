@@ -311,5 +311,10 @@ left: 0;}
     color: #fdf6ec ;
     filter: brightness();
   }
+  .bg {
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+  }
 
 }
