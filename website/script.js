@@ -11,31 +11,11 @@ function decreaseBrighness()
 }
 
 
-function increaseBlur() {
-  if (window.innerWidth <= 640) return;
-  const scrollProgress = Math.min(window.scrollY / (window.innerHeight * 0.85), 1);
-  const maxBlur = 12; // px
-  const blurAmount = scrollProgress * maxBlur;
-  blur.style.backdropFilter = `blur(${blurAmount}px)`;
-  blur.style.webkitBackdropFilter = `blur(${blurAmount}px)`;
-
-
-}
-
 function scrollDown() {
   aboutSection.scrollIntoView({ behavior: "smooth" });
 }
 
 let ticking = false;
-window.addEventListener('scroll', () => {
-  if (!ticking) {
-    requestAnimationFrame(() => {
-      increaseBlur();
-      decreaseBrighness();
-      ticking = false;
-    });
-    ticking = true;
-  }
-});
+window.addEventListener('scroll', decreaseBrighness);
 
 button.addEventListener('click', scrollDown);

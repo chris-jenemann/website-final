@@ -1,13 +1,6 @@
-/* fonts */
-body , html{
-  font-family: 'DM Sans', sans-serif;
-   background-image: none;
+body {
   background-color: #1E1C28;
-  margin: 0;
-  padding: 0;
-  height: 100%;
 }
-
 
 header{
     margin: 0;
@@ -18,9 +11,18 @@ header{
      left: 0;
      z-index: 1;
 }
-/* hero */
+
+
+
+
+img{
+width: 25vw;
+aspect-ratio: 3/2;
+}
+
+
 .blog-hero {
-margin-top: 0;
+  margin-top: 0;
   display: flex;
   align-items: flex-end;
   gap: 1rem;
@@ -32,7 +34,6 @@ margin-top: 0;
   min-height: 280px;
   display: flex;
   align-items: flex-end;
-  padding: 2rem;
   position: relative;
 }
 
@@ -53,7 +54,6 @@ margin-top: 0;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-
 
 .content
 {
@@ -87,10 +87,9 @@ margin-top: 0;
   line-height: 1;
   color: white;
   letter-spacing: 0.04em;
-  margin-top: 4px;
 }
 
-.card-type {
+.card-where {
   font-size: 11px;
   color: rgba(255,255,255,0.6);
   margin-top: 4px;
@@ -102,15 +101,16 @@ margin-top: 0;
 {
   width: 25vw;
 }
+
+img{
+width: 25vw;
+aspect-ratio: 3/2;
+}
+
 .entry
 {
   display: flex;
   gap: 6vw;
-  border-color: rgba(253, 246, 236, 0.12);
-  border-width: 1px;
-  border-style: solid;
-  margin-bottom: 5vh;
-  padding: 10px;
 }
 
 .lang-tag
@@ -124,7 +124,6 @@ margin-top: 0;
 .skills
 {
   row-gap: 5vh;
-  
 }
 .icon
 {
@@ -136,26 +135,6 @@ a{
   color: white;
 }
 
-img{
-width: 25vw;
-aspect-ratio: 3/2;
-}
-
-.write-up
-{
-    font-size: clamp(1rem, 2vw, 1.15rem);
-  font-weight: 400;
-  line-height: 1.75;
-  margin: 0 0 1rem;
-  opacity: 0.85;
-  flex: 2;
-  align-self: flex-start;
-}
-.cards-grid
-{
-  padding: 0vh 6vw;
-  
-}
 
 
 @media (max-width: 640px) {
@@ -170,8 +149,17 @@ aspect-ratio: 3/2;
   }
 
   .blog-hero {
-
+    min-height: 280px;
+    padding: 2rem 1rem 1rem;
     border-bottom: 0;
+  }
+
+  .blog-title {
+    font-size: 42px;
+  }
+
+  .blog-meta {
+    font-size: 10px;
   }
 
 
@@ -207,5 +195,5 @@ aspect-ratio: 3/2;
   .lang-tag {
     font-size: 1rem;
   }
-
 }
+

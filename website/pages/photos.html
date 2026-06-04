@@ -34,13 +34,47 @@
   <div class=container>
     <div class=columns>
     <img src="../photos/arches.webp" alt="picsum">
-    <img src="../photos/photo-header.webp" alt="picsum">
-      <img src="../photos/moonlight.webp" alt="">
+    <img src="../photos/moonlight.webp" alt="">
+    <img src="../photos/ChrisJMissionSunset.jpg" alt="">
+    <img src="../photos/copper.webp" alt="">
+    <img src="../photos/highway2.webp" alt="">
+    <img src="../photos/photo-header.webp" alt="">
+    <img src="../photos/project-background.webp" alt="">
   </div>
   </div>
 </div>
 
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lb-close">✕</button>
+  <img id="lb-img" src="" alt="">
+</div>
 
+<script>
+  const overlay = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+
+  document.querySelectorAll('.columns img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      overlay.classList.add('open');
+    });
+  });
+
+  // close on backdrop click or X button
+  overlay.addEventListener('click', (e) => {
+    if (e.target !== lbImg) overlay.classList.remove('open');
+  });
+
+  document.getElementById('lb-close').addEventListener('click', () => {
+    overlay.classList.remove('open');
+  });
+
+  // close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') overlay.classList.remove('open');
+  });
+</script>
 
 
 

@@ -1,6 +1,4 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+
 
 body , html{
   font-family: 'DM Sans', sans-serif;
@@ -8,10 +6,9 @@ body , html{
   background-color: white;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto; 
 }
 
 header{
@@ -21,7 +18,7 @@ header{
      top: 0;
      right: 0;
      left: 0;
-     z-index: 1;
+     z-index: 2;
 }
 /* hero */
 .blog-hero {
@@ -61,22 +58,23 @@ header{
 
 .container {
   width: 95vw;
-  height: 95vh;
+
   resize: horizontal;
   overflow-x: hidden;
   padding: 1em;
+    box-sizing: border-box;
 }
 
 .columns {
   width: 100%;
   column-width: 300px;
-  gap: 1em;
+  gap: 1px;
 }
 
 img {
   width: 100%;
   object-fit: cover;
-  margin-bottom: 0.5em;
+  margin-bottom: 1px;
   display: block;
 }
 
@@ -84,4 +82,48 @@ img {
   display: grid;
   place-items: center;
   background-color: #fff8f0;
+}
+
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  margin-bottom: 0;
+  cursor: default;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  color: #fff;
+}
+
+.columns img {
+  cursor: zoom-in;
 }
