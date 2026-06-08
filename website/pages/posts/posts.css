@@ -201,3 +201,7 @@ figcaption{
    padding-top: 5vh;
   }
 }
+
+#cusdis_thread iframe {
+  min-height: 400px;
+}
