@@ -202,6 +202,7 @@ figcaption{
   }
 }
 
-#cusdis_thread iframe {
-  min-height: 400px;
+iframe
+{
+  width: 100vw;
 }
