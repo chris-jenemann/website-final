@@ -219,13 +219,18 @@
       <img src="../../photos/smith-river.jpg" alt="">
     </div>
 
-    <div id="cusdis_thread"
+<div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="c4076cc3-f637-46ec-9c6d-7287933dda75"
-  data-page-id="{{ PAGE_ID }}"
-  data-page-url="{{ PAGE_URL }}"
-  data-page-title="{{ PAGE_TITLE }}"
+  data-page-id="my-page"
+  data-page-url=""
+  data-page-title="Smith River"
 ></div>
+<script>
+  const el = document.getElementById("cusdis_thread");
+  el.dataset.pageUrl = window.location.href;
+  el.dataset.pageTitle = document.title;
+</script>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
   </body>
